@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/11 10:07:18 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/11 11:37:36 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/11 16:08:21 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int main(int argc, char **argv)
             while(std::getline(original_file, line))
             {
                 content += line;
+                content += '\n';
             }
             original_file.close();
             position_in_string = content.find(s1);
