@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/11 12:21:28 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/11 13:12:54 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 11:20:42 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,21 @@
 
 int main(void)
 {
-    Harl goat_debate;
-    goat_debate.complain("debug");
-    goat_debate.complain("infos");
-    goat_debate.complain("warning");
-    goat_debate.complain("error");
-    goat_debate.complain("agree");
+        Harl goat_debate;
+    { 
+        goat_debate.complain("debug");
+        goat_debate.complain("info");
+        goat_debate.complain("warning");
+        goat_debate.complain("error");
+        goat_debate.complain("agree");
+    }
+    {
+        goat_debate.complain("error");
+    }
+    {
+        goat_debate.complain("warning");
+        goat_debate.complain("info");
+    }
 
     return (0);
 }
