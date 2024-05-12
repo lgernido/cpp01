@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 08:49:33 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/12 11:37:51 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 12:07:51 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
 #define UNDERLINE  "\033[4m"
 #define ITALIC     "\033[3m"
 #define RESET      "\033[0m"
+
 class Zombie
 {
     public :
