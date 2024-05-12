@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 13:37:11 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/12 11:02:38 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 13:43:32 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@
 class HumanA
 {
     public :
-        ~HumanA();
         HumanA(std::string name, Weapon &weapon);
+        ~HumanA();
         void attack(void);
     
     private :
