@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 08:49:40 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/12 09:46:27 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 11:39:08 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ Zombie::Zombie(std::string const name)
 
 Zombie::~Zombie()
 {
-    std::cout << RED << this->get_name() << " is dead" << RESET << std::endl;
+    std::cout << RED << BOLD << this->get_name() << \
+    RESET << RED << " is dead" << RESET << std::endl;
     return ;
 }
 
@@ -37,5 +38,6 @@ std::string Zombie::get_name(void)
 
 void Zombie::announce(void)
 {
-    std::cout << GREEN << this->get_name() << ": BraiiiiiiinnnzzzZ..." << RESET << std::endl;
+    std::cout << GREEN << BOLD << this->get_name() << \
+    RESET << GREEN << ": BraiiiiiiinnnzzzZ..." << RESET << std::endl;
 }
