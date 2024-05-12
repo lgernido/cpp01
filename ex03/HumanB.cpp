@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 13:37:15 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/11 14:31:54 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 11:10:06 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@ HumanB::~HumanB()
 
 void HumanB::attack(void)
 {
-    std::cout << this->name << " attacks with their " << this->Weapon->getType() << std::endl;
+    std::cout << MAGENTA << BOLD << this->name << \
+    RESET << MAGENTA << " attacks with their " << \
+    UNDERLINE << this->Weapon->getType() << RESET << std::endl;
 }
 
 void HumanB::setWeapon(class Weapon &Weapon)

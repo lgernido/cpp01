@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 13:37:14 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/10 14:15:40 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 10:58:11 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Weapon
         Weapon();
         ~Weapon();
         Weapon(std::string type);
-        std::string const getType(void);
+        std::string const &getType(void) const;
         void setType(std::string type);
     
     private :
