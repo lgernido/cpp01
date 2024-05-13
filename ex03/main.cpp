@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 13:37:23 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/12 09:54:48 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:31:37 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,11 @@ int main()
         jim.attack();
         club.setType("some other type of club");
         jim.attack();
+    }
+    {
+        Weapon club = Weapon("crude spiked club");
+        HumanB marc("Marc");
+        marc.attack();
     }
 
     return 0;
