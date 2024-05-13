@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/11 12:21:36 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/12 11:29:37 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/12 14:03:44 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,16 @@
 
 Harl::Harl()
 {
-    
+    std::cout << "Harl " << UNDERLINE << "constructor" << RESET << \
+    " called" << std::endl;
+    std::cout << std::endl;
 }
 
 Harl::~Harl()
 {
-    
+    std::cout << "Harl " << UNDERLINE << "destructor" << RESET << \
+    " called" << std::endl;
+    std::cout << std::endl;
 }
 
 void Harl::complain(std::string level)
